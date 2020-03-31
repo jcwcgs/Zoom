@@ -77,7 +77,7 @@ if(isset($_POST['submit'])){
         CURLOPT_POSTFIELDS => array('pic_file'=> new CURLFILE("uploads/" . $photo)),
         CURLOPT_HTTPHEADER => array(
             "Content-Type: multipart/form-data",
-            "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOm51bGwsImlzcyI6InhVMnlNM1pIU0k2MWhZbkdEdk5OR2ciLCJleHAiOjE1ODUyNzczNzUsImlhdCI6MTU4NDY3MjU3Nn0.CgHnhRutsTALpaANQIjsbGV7WvhxoOnm9qN2X1Q973M"
+            "Authorization: Bearer $token"
         ),
         ));
 
